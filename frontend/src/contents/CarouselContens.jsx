@@ -33,7 +33,7 @@ const CarouselContens = ({ items }) => {
             },
           }}
           modules={[Pagination]}
-          className="mySwiper w-full h-full"
+          className="mySwiper w-full h-full cursor-pointer"
         >
           {items.map((item) => (
             <SwiperSlide key={item._id}>

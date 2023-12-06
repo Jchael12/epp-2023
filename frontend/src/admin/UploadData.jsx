@@ -31,7 +31,7 @@ const UploadData = () => {
   };
 
   return (
-    <div className="px-4 my-12">
+    <div className="px-4 my-12 bg-gradient-to-r from-red-200 to-red-600 p-10">
       <h2 className="mb-8 text-3xl font-bold">Upload Data</h2>
       <form
         className="flex lg:w-[1180px] flex-col flex-wrap gap-4"

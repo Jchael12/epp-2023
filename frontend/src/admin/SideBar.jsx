@@ -2,10 +2,8 @@ import { Sidebar } from "flowbite-react";
 import {
   HiChartPie,
   HiInbox,
-  HiUser,
   HiOutlineCloudUpload,
   HiLogout,
-  HiOutlineLogin,
 } from "react-icons/hi";
 
 import Logo from "../assets/earist-logo-1.png";
@@ -30,12 +28,6 @@ const SideBar = () => {
           </Sidebar.Item>
           <Sidebar.Item href="/admin/dashboard/manage" icon={HiInbox}>
             Manage Contents
-          </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiUser}>
-            Users
-          </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiOutlineLogin}>
-            Sign In
           </Sidebar.Item>
           <Sidebar.Item href="/logout" icon={HiLogout}>
             Log Out

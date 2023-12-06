@@ -33,11 +33,11 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/admin/dashboard",
+    path: "/admin",
     element: <DashboardLayout />,
     children: [
       {
-        path: "/admin/dashboard",
+        path: "/admin",
         element: <PrivateRoute />,
       },
       {

@@ -114,17 +114,17 @@ const Signup = () => {
           </div>
           <button
             type="submit"
-            className="block w-full bg-red-800  hover:bg-yellow-300 hover:text-red-800 mt-4 py-2 rounded-2xl text-white font-semibold mb-2"
+            className="block w-full bg-red-800  hover:bg-yellow-300 hover:text-red-800 mt-4 py-2 rounded-2xl text-white font-semibold mb-2 transition delay-75 ease-in-out"
           >
             Signup
           </button>
-          <button
-            onClick={handleRegister}
-            className="block w-full bg-red-800 hover:bg-yellow-300 hover:text-red-800 mt-4 py-2 rounded-2xl text-white font-semibold mb-2"
-          >
-            <img src={gLogo} className="w-6 h-6 inline-block" />
-            Sign up with Google
-          </button>
+          {/* <button */}
+          {/*   onClick={handleRegister} */}
+          {/*   className="block w-full bg-red-800 hover:bg-yellow-300 hover:text-red-800 mt-4 py-2 rounded-2xl text-white font-semibold mb-2" */}
+          {/* > */}
+          {/*   <img src={gLogo} className="w-6 h-6 inline-block" /> */}
+          {/*   Sign up with Google */}
+          {/* </button> */}
           <p className="text-sm ml-2  cursor-pointer">
             Already had an account?{" "}
             <Link
