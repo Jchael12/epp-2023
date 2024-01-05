@@ -77,7 +77,7 @@ function Nav() {
             <Link
               onClick={closeMenu}
               className="dark:text-white dark:hover:text-[#dc2626] ease-in-out duration-300 hover:bg-red-800 p-2 hover:text-amber-300 rounded-sm"
-              to="/earist-extension-program/"
+              to="/"
             >
               Home
             </Link>
@@ -91,7 +91,7 @@ function Nav() {
             <Link
               onClick={closeMenu}
               className="dark:text-white dark:hover:text-[#dc2626] ease-in-out duration-300 hover:bg-red-800 p-2 hover:text-amber-300 rounded-sm"
-              to="/earist-extension-program/news"
+              to="/news"
             >
               News
             </Link>

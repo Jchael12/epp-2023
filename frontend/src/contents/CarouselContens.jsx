@@ -1,17 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import required modules
 import { Pagination } from "swiper/modules";
 
 const CarouselContens = ({ items }) => {
   return (
-    <div className="my-10 px-4 lg:px-24">
-      {/* {card} */}
-      <div>
+    <div className="my-10 px-4 lg:px-24 h-full">
+      <div className="h-full">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -34,11 +29,21 @@ const CarouselContens = ({ items }) => {
           }}
           modules={[Pagination]}
           className="mySwiper w-full h-full cursor-pointer"
+          style={{ height: "100%" }}
         >
           {items.map((item) => (
             <SwiperSlide key={item._id}>
-              <div className="relative">
-                <img src={item.imageURL} />
+              <div className="relative h-full">
+                {/* Container with fixed width and height */}
+                <div className="w-64 h-64">
+                  {/* Image fitting inside the container */}
+                  <img
+                    src={item.imageURL}
+                    className="w-full h-full object-cover"
+                    alt={`Slide ${item._id}`}
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
               </div>
             </SwiperSlide>
           ))}
